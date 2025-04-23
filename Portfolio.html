@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f4f4f4;
+      }
+
+      .w3-bar-main {
+          position: sticky;
+          top: 0;
+          width: 100%;
+          background-color: rgba(0, 0, 0, 0.7);
+          z-index: 1000;
+          display: flex;
+          justify-content: center;
+          padding: 10px 0;
+          margin-bottom: 10px;
+      }
+
+      .w3-bar-main a, .w3-bar-gallery a {
+          color: white;
+          margin: 0 15px;
+          text-decoration: none;
+          font-size: 18px;
+          padding: 10px 15px;
+      }
+
+      .w3-bar-main a:hover, .w3-bar-gallery a:hover {
+          background-color: rgba(255, 255, 255, 0.2);
+          border-radius: 5px;
+      }
+
+      .w3-bar-gallery {
+          position: sticky;
+          top: 50px;
+          width: 100%;
+          background-color: rgba(0, 0, 0, 0.7);
+          z-index: 999;
+          display: flex;
+          justify-content: center;
+          padding: 10px 0;
+      }
+
+      .gallery-container {
+          margin: 40px auto;
+          max-width: 800px;
+          text-align: center;
+      }
+
+      .gallery-title {
+          font-size: 24px;
+          margin-bottom: 10px;
+      }
+
+      .slideshow-container {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0 60px;
+      }
+
+      .slide {
+          display: none;
+      }
+
+      .slide img {
+          width: 100%;
+          border-radius: 5px;
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+      }
+
+      .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 10px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 5px;
+          background: rgba(0, 0, 0, 0.5);
+          transform: translateY(-50%);
+      }
+
+      .prev { left: -50px; }
+      .next { right: -50px; }
+  </style>
+</head>
+<body>
+    <!-- First Navigation Bar (Main Navigation) -->
+    <div class="w3-bar-main">
+        <a href="MyWebsite.html" class="w3-bar-item w3-button">Home</a>
+        <a href="portfolio.html" class="w3-bar-item w3-button">Portfolio</a>
+        <a href="Pricing.html" class="w3-bar-item w3-button">Pricing</a>
+        <a href="MyWebsite.html#about" class="w3-bar-item w3-button">About Me</a>
+        <a href="MyWebsite.html#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+
+    <!-- Second Navigation Bar (Gallery Navigation) -->
+    <div class="w3-bar-gallery">
+        <a href="#basketball" class="w3-bar-item w3-button">Basketball</a>
+        <a href="#football" class="w3-bar-item w3-button">Football</a>
+        <a href="#rugby" class="w3-bar-item w3-button">Rugby</a>
+    </div>
+
+    <!-- Basketball Gallery -->
+    <div class="gallery-container" id="basketball">
+        <h2 class="gallery-title">Basketball</h2>
+        <div class="slideshow-container">
+          <div class="slide"><img src="https://i.imgur.com/ydaSkPK.jpeg" alt="Basketball Image 1"></div>
+          <div class="slide"><img src="https://i.imgur.com/5kxp4uw.jpeg" alt="Basketball Image 2"></div>
+          <div class="slide"><img src="https://i.imgur.com/DH5USWg.jpeg" alt="Basketball Image 3"></div>
+          <div class="slide"><img src="https://i.imgur.com/t8IIcoO.jpeg" alt="Basketball Image 4"></div>
+          <div class="slide"><img src="https://i.imgur.com/9ps9Jdp.jpeg" alt="Basketball Image 5"></div>
+          <div class="slide"><img src="https://i.imgur.com/2xdsq4A.jpeg" alt="Basketball Image 6"></div>
+          <div class="slide"><img src="https://i.imgur.com/VIsPODi.jpeg" alt="Basketball Image 7"></div>
+          <div class="slide"><img src="https://i.imgur.com/w45MhH1.jpeg" alt="Basketball Image 8"></div>
+          <div class="slide"><img src="https://i.imgur.com/seCfuNR.jpeg" alt="Basketball Image 9"></div>
+          <div class="slide"><img src="https://i.imgur.com/sMk7iwk.jpeg" alt="Basketball Image 10"></div>
+          <div class="slide"><img src="https://i.imgur.com/TJ4htFm.jpeg" alt="Basketball Image 11"></div>
+          <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+      </div>
+    </div>
+
+    <!-- Football Gallery -->
+    <div class="gallery-container" id="football">
+        <h2 class="gallery-title">Football</h2>
+        <div class="slideshow-container">
+            <div class="slide"><img src="https://i.imgur.com/HFUn9Vi.jpeg" alt="Football Image 1"></div>
+            <div class="slide"><img src="https://i.imgur.com/NVOE1dL.jpeg" alt="Football Image 2"></div>
+            <div class="slide"><img src="https://i.imgur.com/vdspKM3.jpeg" alt="Football Image 3"></div>
+            <div class="slide"><img src="https://i.imgur.com/F6D7soA.jpeg" alt="Football Image 4"></div>
+            <div class="slide"><img src="https://i.imgur.com/eIzX47v.jpeg" alt="Football Image 5"></div>
+            <div class="slide"><img src="https://i.imgur.com/xf82M7a.jpeg" alt="Football Image 6"></div>
+            <div class="slide"><img src="https://i.imgur.com/sELv1ra.jpeg" alt="Football Image 7"></div>
+            <div class="slide"><img src="https://i.imgur.com/RQ2UkYc.jpeg" alt="Football Image 8"></div>
+            <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+        </div>
+    </div>
+
+<!-- Rugby Gallery -->
+<div class="gallery-container" id="rugby">
+  <h2 class="gallery-title">Rugby</h2>
+  <div class="slideshow-container">
+      <div class="slide"><img src="https://i.imgur.com/GbJQxG0.jpeg" alt="Rugby Image 1"></div>
+      <div class="slide"><img src="https://i.imgur.com/G2GBkqE.jpeg" alt="Rugby Image 2"></div>
+      <div class="slide"><img src="https://i.imgur.com/egEEcht.jpeg" alt="Rugby Image 3"></div>
+      <div class="slide"><img src="https://i.imgur.com/lPCQITw.jpeg" alt="Rugby Image 4"></div>
+      <div class="slide"><img src="https://i.imgur.com/8zcNRCi.jpeg" alt="Rugby Image 5"></div>
+      <div class="slide"><img src="https://i.imgur.com/etEpVWp.jpeg" alt="Rugby Image 6"></div>
+      <div class="slide"><img src="https://i.imgur.com/wPPSIaa.jpeg" alt="Rugby Image 7"></div>
+      <div class="slide"><img src="https://i.imgur.com/RZz4OLN.jpeg" alt="Rugby Image 8"></div>
+      <div class="slide"><img src="https://i.imgur.com/8QO5hnk.jpeg" alt="Rugby Image 9"></div>
+      <div class="slide"><img src="https://i.imgur.com/8EaXBFP.jpeg" alt="Rugby Image 10"></div>
+      <div class="slide"><img src="https://i.imgur.com/XFZd64X.jpeg" alt="Rugby Image 11"></div>
+      <div class="slide"><img src="https://i.imgur.com/HR5RH9N.jpeg" alt="Rugby Image 12"></div>
+      <div class="slide"><img src="https://i.imgur.com/bpEwu2h.jpeg" alt="Rugby Image 13"></div>
+      <div class="slide"><img src="https://i.imgur.com/C0jBabS.jpeg" alt="Rugby Image 14"></div>
+      <div class="slide"><img src="https://i.imgur.com/JH1FPmO.jpeg" alt="Rugby Image 15"></div>
+      <div class="slide"><img src="https://i.imgur.com/vebSm8K.jpeg" alt="Rugby Image 16"></div>
+      <div class="slide"><img src="https://i.imgur.com/grm8xb7.jpeg" alt="Rugby Image 17"></div>
+      <div class="slide"><img src="https://i.imgur.com/QPg3F3z.jpeg" alt="Rugby Image 18"></div>
+      <div class="slide"><img src="https://i.imgur.com/pPbu3xW.jpeg" alt="Rugby Image 19"></div>
+      <div class="slide"><img src="https://i.imgur.com/X86SpTX.jpeg" alt="Rugby Image 20"></div>
+      <div class="slide"><img src="https://i.imgur.com/0ya1ZY8.jpeg" alt="Rugby Image 21"></div>
+      <div class="slide"><img src="https://i.imgur.com/qgvPTBm.jpeg" alt="Rugby Image 22"></div>
+      <div class="slide"><img src="https://i.imgur.com/BkHn1g1.jpeg" alt="Rugby Image 23"></div>
+      <div class="slide"><img src="https://i.imgur.com/t1kQnDO.jpeg" alt="Rugby Image 24"></div>
+      <div class="slide"><img src="https://i.imgur.com/7XmoiNM.jpeg" alt="Rugby Image 25"></div>
+      <div class="slide"><img src="https://i.imgur.com/wsPK3VH.jpeg" alt="Rugby Image 26"></div>
+      <div class="slide"><img src="https://i.imgur.com/e0a71YV.jpeg" alt="Rugby Image 27"></div>
+      <div class="slide"><img src="https://i.imgur.com/RNm3zu6.jpeg" alt="Rugby Image 28"></div>
+      <div class="slide"><img src="https://i.imgur.com/gxg4eF7.jpeg" alt="Rugby Image 29"></div>
+      <div class="slide"><img src="https://i.imgur.com/IeFYNME.jpeg" alt="Rugby Image 30"></div>
+      <div class="slide"><img src="https://i.imgur.com/P6vSiJM.jpeg" alt="Rugby Image 31"></div>
+      <div class="slide"><img src="https://i.imgur.com/PrvwMw1.jpeg" alt="Rugby Image 32"></div>
+      <div class="slide"><img src="https://i.imgur.com/kr5ceR4.jpeg" alt="Rugby Image 33"></div>
+      <div class="slide"><img src="https://i.imgur.com/IpJgOTl.jpeg" alt="Rugby Image 34"></div>
+      <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+  </div>
+</div>
+
+
+    <script>
+        let slideIndex = [0, 0, 0];
+        let slideContainers = document.getElementsByClassName("slideshow-container");
+
+        function showSlides(n, galleryIndex) {
+            let slides = slideContainers[galleryIndex].getElementsByClassName("slide");
+            if (n >= slides.length) { slideIndex[galleryIndex] = 0; }
+            if (n < 0) { slideIndex[galleryIndex] = slides.length - 1; }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex[galleryIndex]].style.display = "block";
+        }
+
+        function plusSlides(n, galleryIndex) {
+            showSlides(slideIndex[galleryIndex] += n, galleryIndex);
+        }
+
+        for (let i = 0; i < slideContainers.length; i++) {
+            showSlides(0, i);
+        }
+    </script>
+</body>
+</html>
